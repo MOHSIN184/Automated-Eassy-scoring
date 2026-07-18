@@ -1,0 +1,553 @@
+{
+  "model_type": "quick_baseline",
+  "model_name": "TF-IDF + Ridge CPU baseline",
+  "feature_names": [
+    "word_count",
+    "character_count",
+    "paragraph_count",
+    "sentence_count",
+    "avg_sentence_length",
+    "sentence_length_std",
+    "avg_word_length",
+    "unique_words",
+    "type_token_ratio",
+    "root_type_token_ratio",
+    "hapax_ratio",
+    "repetition_ratio",
+    "flesch_reading_ease",
+    "flesch_kincaid_grade",
+    "grammar_error_count",
+    "grammar_errors_per_100_words",
+    "spelling_error_count",
+    "spelling_errors_per_100_words",
+    "passive_voice_ratio",
+    "transition_count",
+    "transitions_per_100_words",
+    "comma_count",
+    "semicolon_count",
+    "colon_count",
+    "question_count",
+    "exclamation_count",
+    "punctuation_per_100_words",
+    "complex_sentence_ratio",
+    "avg_paragraph_words",
+    "paragraph_length_std"
+  ],
+  "num_features": 30,
+  "score_min": 1.0,
+  "score_max": 6.0,
+  "validation_rmse": 0.5867445709079524,
+  "confidence_calibration": {
+    "method": "held_out_exact_rounded_score_accuracy",
+    "bin_width": 0.25,
+    "overall": {
+      "confidence": 0.6360204906983015,
+      "rmse": 0.5867445709079524,
+      "count": 3709
+    },
+    "by_bin": {
+      "1": {
+        "confidence": 0.47058823529411764,
+        "rmse": 0.5113512948894494,
+        "count": 85
+      },
+      "2": {
+        "confidence": 0.6380368098159509,
+        "rmse": 0.5432200590890532,
+        "count": 163
+      },
+      "3": {
+        "confidence": 0.7245762711864406,
+        "rmse": 0.4910429215579668,
+        "count": 236
+      },
+      "4": {
+        "confidence": 0.7184466019417476,
+        "rmse": 0.5252673475050893,
+        "count": 309
+      },
+      "5": {
+        "confidence": 0.5643835616438356,
+        "rmse": 0.5969083892606413,
+        "count": 365
+      },
+      "6": {
+        "confidence": 0.5691244239631337,
+        "rmse": 0.6168530713042069,
+        "count": 434
+      },
+      "7": {
+        "confidence": 0.7438423645320197,
+        "rmse": 0.5542940028343716,
+        "count": 406
+      },
+      "8": {
+        "confidence": 0.6962025316455697,
+        "rmse": 0.5600736659301487,
+        "count": 395
+      },
+      "9": {
+        "confidence": 0.48342541436464087,
+        "rmse": 0.6436367243863718,
+        "count": 362
+      },
+      "10": {
+        "confidence": 0.6391437308868502,
+        "rmse": 0.5986919241292707,
+        "count": 327
+      },
+      "11": {
+        "confidence": 0.7425742574257426,
+        "rmse": 0.5392268443583428,
+        "count": 202
+      },
+      "12": {
+        "confidence": 0.7243589743589743,
+        "rmse": 0.6202776578905309,
+        "count": 156
+      },
+      "13": {
+        "confidence": 0.38235294117647056,
+        "rmse": 0.6602957995147627,
+        "count": 102
+      },
+      "14": {
+        "confidence": 0.6363636363636364,
+        "rmse": 0.7341040404916938,
+        "count": 66
+      }
+    },
+    "by_prompt_bin": {
+      "\"A Cowboy Who Rode the Waves\"::3": {
+        "confidence": 0.7272727272727273,
+        "rmse": 0.5183703534672317,
+        "count": 33
+      },
+      "\"A Cowboy Who Rode the Waves\"::4": {
+        "confidence": 0.6551724137931034,
+        "rmse": 0.5710140914753087,
+        "count": 58
+      },
+      "\"A Cowboy Who Rode the Waves\"::5": {
+        "confidence": 0.5576923076923077,
+        "rmse": 0.6059450021723191,
+        "count": 52
+      },
+      "\"A Cowboy Who Rode the Waves\"::6": {
+        "confidence": 0.5094339622641509,
+        "rmse": 0.7250753512982582,
+        "count": 53
+      },
+      "\"A Cowboy Who Rode the Waves\"::7": {
+        "confidence": 0.7948717948717948,
+        "rmse": 0.4762381287723293,
+        "count": 39
+      },
+      "Car-free cities::7": {
+        "confidence": 0.5526315789473685,
+        "rmse": 0.6690292886296481,
+        "count": 38
+      },
+      "Car-free cities::8": {
+        "confidence": 0.5641025641025641,
+        "rmse": 0.6315641601482062,
+        "count": 39
+      },
+      "Car-free cities::10": {
+        "confidence": 0.5833333333333334,
+        "rmse": 0.6378669868704722,
+        "count": 36
+      },
+      "Does the electoral college work?::6": {
+        "confidence": 0.5263157894736842,
+        "rmse": 0.6890568827331142,
+        "count": 38
+      },
+      "Does the electoral college work?::7": {
+        "confidence": 0.5428571428571428,
+        "rmse": 0.8670600324179627,
+        "count": 35
+      },
+      "Does the electoral college work?::8": {
+        "confidence": 0.6666666666666666,
+        "rmse": 0.6555830353992714,
+        "count": 36
+      },
+      "Does the electoral college work?::9": {
+        "confidence": 0.2702702702702703,
+        "rmse": 0.9225916996418143,
+        "count": 37
+      },
+      "Driverless cars::3": {
+        "confidence": 0.7352941176470589,
+        "rmse": 0.4675286655841919,
+        "count": 34
+      },
+      "Driverless cars::4": {
+        "confidence": 0.8571428571428571,
+        "rmse": 0.3603604643366117,
+        "count": 49
+      },
+      "Driverless cars::5": {
+        "confidence": 0.6666666666666666,
+        "rmse": 0.5075450375193759,
+        "count": 72
+      },
+      "Driverless cars::6": {
+        "confidence": 0.5959595959595959,
+        "rmse": 0.5356525306625944,
+        "count": 99
+      },
+      "Driverless cars::7": {
+        "confidence": 0.7850467289719626,
+        "rmse": 0.48817108023036776,
+        "count": 107
+      },
+      "Driverless cars::8": {
+        "confidence": 0.7192982456140351,
+        "rmse": 0.5316819409367987,
+        "count": 114
+      },
+      "Driverless cars::9": {
+        "confidence": 0.4536082474226804,
+        "rmse": 0.5656282221826276,
+        "count": 97
+      },
+      "Driverless cars::10": {
+        "confidence": 0.680672268907563,
+        "rmse": 0.5158089753869312,
+        "count": 119
+      },
+      "Driverless cars::11": {
+        "confidence": 0.7777777777777778,
+        "rmse": 0.44006206258794617,
+        "count": 72
+      },
+      "Driverless cars::12": {
+        "confidence": 0.703125,
+        "rmse": 0.6143014500166643,
+        "count": 64
+      },
+      "Driverless cars::13": {
+        "confidence": 0.47058823529411764,
+        "rmse": 0.5554613414650221,
+        "count": 34
+      },
+      "Exploring Venus::1": {
+        "confidence": 0.5277777777777778,
+        "rmse": 0.49269429611410764,
+        "count": 36
+      },
+      "Exploring Venus::2": {
+        "confidence": 0.6530612244897959,
+        "rmse": 0.6005000696364946,
+        "count": 49
+      },
+      "Exploring Venus::3": {
+        "confidence": 0.6792452830188679,
+        "rmse": 0.5151106173201253,
+        "count": 53
+      },
+      "Exploring Venus::4": {
+        "confidence": 0.6119402985074627,
+        "rmse": 0.6292334843129869,
+        "count": 67
+      },
+      "Exploring Venus::5": {
+        "confidence": 0.5428571428571428,
+        "rmse": 0.6509611537035798,
+        "count": 70
+      },
+      "Exploring Venus::6": {
+        "confidence": 0.5394736842105263,
+        "rmse": 0.6716630225323436,
+        "count": 76
+      },
+      "Exploring Venus::7": {
+        "confidence": 0.7384615384615385,
+        "rmse": 0.5747724564623389,
+        "count": 65
+      },
+      "Exploring Venus::8": {
+        "confidence": 0.6481481481481481,
+        "rmse": 0.6352314843978916,
+        "count": 54
+      },
+      "Exploring Venus::9": {
+        "confidence": 0.52,
+        "rmse": 0.6780672694326769,
+        "count": 75
+      },
+      "Exploring Venus::10": {
+        "confidence": 0.6666666666666666,
+        "rmse": 0.6489997481101034,
+        "count": 36
+      },
+      "Facial action coding system::2": {
+        "confidence": 0.6774193548387096,
+        "rmse": 0.5218760624592603,
+        "count": 31
+      },
+      "Facial action coding system::3": {
+        "confidence": 0.8292682926829268,
+        "rmse": 0.3962233960564708,
+        "count": 41
+      },
+      "Facial action coding system::4": {
+        "confidence": 0.7777777777777778,
+        "rmse": 0.4753199037996131,
+        "count": 54
+      },
+      "Facial action coding system::5": {
+        "confidence": 0.6197183098591549,
+        "rmse": 0.5304433405797047,
+        "count": 71
+      },
+      "Facial action coding system::6": {
+        "confidence": 0.6333333333333333,
+        "rmse": 0.5486927875122335,
+        "count": 90
+      },
+      "Facial action coding system::7": {
+        "confidence": 0.8695652173913043,
+        "rmse": 0.379762147625806,
+        "count": 69
+      },
+      "Facial action coding system::8": {
+        "confidence": 0.7948717948717948,
+        "rmse": 0.43521213860627156,
+        "count": 78
+      },
+      "Facial action coding system::9": {
+        "confidence": 0.53125,
+        "rmse": 0.5442901858350628,
+        "count": 64
+      },
+      "Facial action coding system::10": {
+        "confidence": 0.5571428571428572,
+        "rmse": 0.5784413896619155,
+        "count": 70
+      },
+      "Facial action coding system::11": {
+        "confidence": 0.7391304347826086,
+        "rmse": 0.4902166911922665,
+        "count": 46
+      },
+      "Facial action coding system::12": {
+        "confidence": 0.7948717948717948,
+        "rmse": 0.42767664543810036,
+        "count": 39
+      },
+      "The Face on Mars::3": {
+        "confidence": 0.7714285714285715,
+        "rmse": 0.44612070144773025,
+        "count": 35
+      },
+      "The Face on Mars::4": {
+        "confidence": 0.8367346938775511,
+        "rmse": 0.4211744596242766,
+        "count": 49
+      },
+      "The Face on Mars::5": {
+        "confidence": 0.543859649122807,
+        "rmse": 0.5866635694667568,
+        "count": 57
+      },
+      "The Face on Mars::6": {
+        "confidence": 0.5263157894736842,
+        "rmse": 0.6385731455345978,
+        "count": 57
+      },
+      "The Face on Mars::7": {
+        "confidence": 0.7358490566037735,
+        "rmse": 0.5433871192677925,
+        "count": 53
+      },
+      "The Face on Mars::8": {
+        "confidence": 0.7608695652173914,
+        "rmse": 0.47428577878474265,
+        "count": 46
+      },
+      "The Face on Mars::9": {
+        "confidence": 0.5263157894736842,
+        "rmse": 0.7072549635816173,
+        "count": 38
+      },
+      "The Face on Mars::10": {
+        "confidence": 0.6666666666666666,
+        "rmse": 0.6170805775928068,
+        "count": 33
+      }
+    }
+  },
+  "feature_quantiles": {
+    "word_count": {
+      "q25": 248.0,
+      "median": 338.0,
+      "q75": 445.0
+    },
+    "character_count": {
+      "q25": 1367.0,
+      "median": 1869.0,
+      "q75": 2489.0
+    },
+    "paragraph_count": {
+      "q25": 3.0,
+      "median": 5.0,
+      "q75": 5.0
+    },
+    "sentence_count": {
+      "q25": 12.0,
+      "median": 17.0,
+      "q75": 23.0
+    },
+    "avg_sentence_length": {
+      "q25": 16.53333282470703,
+      "median": 19.782608032226562,
+      "q75": 24.5
+    },
+    "sentence_length_std": {
+      "q25": 6.9806365966796875,
+      "median": 9.13509750366211,
+      "q75": 12.424208641052246
+    },
+    "avg_word_length": {
+      "q25": 4.221034049987793,
+      "median": 4.422145366668701,
+      "q75": 4.630434989929199
+    },
+    "unique_words": {
+      "q25": 126.0,
+      "median": 158.0,
+      "q75": 196.0
+    },
+    "type_token_ratio": {
+      "q25": 0.4232954680919647,
+      "median": 0.47311827540397644,
+      "q75": 0.5276381969451904
+    },
+    "root_type_token_ratio": {
+      "q25": 7.842935085296631,
+      "median": 8.629110336303711,
+      "q75": 9.49592113494873
+    },
+    "hapax_ratio": {
+      "q25": 0.25380709767341614,
+      "median": 0.301075279712677,
+      "q75": 0.3571428656578064
+    },
+    "repetition_ratio": {
+      "q25": 0.47236180305480957,
+      "median": 0.5268816947937012,
+      "q75": 0.5767045617103577
+    },
+    "flesch_reading_ease": {
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0
+    },
+    "flesch_kincaid_grade": {
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0
+    },
+    "grammar_error_count": {
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0
+    },
+    "grammar_errors_per_100_words": {
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0
+    },
+    "spelling_error_count": {
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0
+    },
+    "spelling_errors_per_100_words": {
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0
+    },
+    "passive_voice_ratio": {
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0
+    },
+    "transition_count": {
+      "q25": 1.0,
+      "median": 2.0,
+      "q75": 4.0
+    },
+    "transitions_per_100_words": {
+      "q25": 0.2865329384803772,
+      "median": 0.6024096608161926,
+      "q75": 1.047120451927185
+    },
+    "comma_count": {
+      "q25": 5.0,
+      "median": 10.0,
+      "q75": 17.0
+    },
+    "semicolon_count": {
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0
+    },
+    "colon_count": {
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0
+    },
+    "question_count": {
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 1.0
+    },
+    "exclamation_count": {
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0
+    },
+    "punctuation_per_100_words": {
+      "q25": 8.72894287109375,
+      "median": 11.148648262023926,
+      "q75": 13.716814041137695
+    },
+    "complex_sentence_ratio": {
+      "q25": 0.22727273404598236,
+      "median": 0.4000000059604645,
+      "q75": 0.5714285969734192
+    },
+    "avg_paragraph_words": {
+      "q25": 59.0,
+      "median": 77.33333587646484,
+      "q75": 101.25
+    },
+    "paragraph_length_std": {
+      "q25": 14.514360427856445,
+      "median": 24.752525329589844,
+      "q75": 37.95465087890625
+    }
+  },
+  "feature_settings": {
+    "enable_grammar": false,
+    "enable_spelling": false
+  },
+  "validation_metrics": {
+    "mae": 0.4529023589583927,
+    "rmse": 0.5867445709079524,
+    "quadratic_weighted_kappa": 0.7707766970315911,
+    "pearson": 0.8248798190743142,
+    "spearman": 0.8272964215561316
+  },
+  "test_metrics": {
+    "mae": 0.46367783684614855,
+    "rmse": 0.5963518189503861,
+    "quadratic_weighted_kappa": 0.7676413164469731,
+    "pearson": 0.8169938972954018,
+    "spearman": 0.8165487521664853
+  }
+}
