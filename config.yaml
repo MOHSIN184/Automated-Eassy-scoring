@@ -1,0 +1,9 @@
+features:
+  spacy_model: en_core_web_sm
+  enable_grammar: true
+  enable_spelling: true
+  language_tool_language: en-US
+paths:
+  artifact_dir: checkpoints/best_model
+inference:
+  max_batch_size: 32
